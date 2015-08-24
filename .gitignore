@@ -3,3 +3,11 @@
 
 # Packaging
 .cask
+
+*~
+.*
+ac-comphist.dat
+auto-save-list
+ede-projects.el
+elpa
+semanticdb
