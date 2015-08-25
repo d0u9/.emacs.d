@@ -14,7 +14,10 @@
 (require 'naive_configurations)
 (require 'copy-paste-x)
 (require 'copy-cut-one-line)
-
+(require 'doc-mode)
+(add-hook 'c-mode-common-hook 'doc-mode)
+(add-hook 'c-mode-hook 'doc-mode)
+(add-hook 'c++-mode-hook 'doc-mode)
 
 ;; Auto install all the packages which I mentioned.
 (defconst demo-packages
