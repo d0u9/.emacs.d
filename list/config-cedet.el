@@ -1,13 +1,8 @@
 ;; config-cedet.el
 
-(require 'cc-mode)
-(require 'semantic)
-
 (global-semanticdb-minor-mode 1)
 (global-semantic-idle-scheduler-mode 1)
 (global-semantic-stickyfunc-mode 1)
-
-(semantic-mode 1)
 
 (defun alexott/cedet-hook ()
   (local-set-key "\C-c\C-j" 'semantic-ia-fast-jump)
