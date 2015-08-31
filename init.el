@@ -41,6 +41,7 @@
     powerline
     diminish
     sr-speedbar
+    company-c-headers
     ))
 
 (defun install-packages ()

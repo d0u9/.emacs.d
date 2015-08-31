@@ -15,3 +15,8 @@
   (add-to-list 'company-backends 'company-anaconda))
 
 (provide 'config-company)
+
+;; company-c-headers
+(require `company-c-headers)
+(add-to-list 'company-backends 'company-c-headers)
+(add-to-list 'company-c-headers-path-system "/usr/include/c++/4.2.1/")
