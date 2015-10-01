@@ -42,6 +42,7 @@
     diminish
     sr-speedbar
     company-c-headers
+    color-theme-solarized
     ))
 
 (defun install-packages ()
@@ -66,16 +67,17 @@
 (require 'config-company)
 (require 'config-git-gutter)
 
+;; Theme
+(load-theme 'solarized t)
+(set-terminal-parameter nil 'background-mode 'dark)
 
 ;; Powerline setup
 (require 'powerline)
 (powerline-default-theme)
 
-(set-face-attribute 'mode-line nil
-                    :foreground "Black"
-                    ;;:background "DarkOrange"
-                    :box nil)
-
+(custom-set-faces
+ '(mode-line ((t (:foreground "#030303" :background "#dddddd" :box nil))))
+ '(mode-line-inactive ((t (:foreground "#f9f9f9" :background "#666666" :box nil)))))
 
 
 ;; Fix iedit bug in Mac
