@@ -3,8 +3,9 @@
 
 ;; initial package.el
 (require 'package)
-(add-to-list 'package-archives
-	     '("melpa" . "http://melpa.org/packages/") t)
+(setq package-archives '(("gnu" . "http://elpa.gnu.org/packages/")
+                         ("marmalade" . "https://marmalade-repo.org/packages/")
+                         ("melpa" . "http://melpa.org/packages/")))
 (package-initialize)
 
 
@@ -43,6 +44,8 @@
     sr-speedbar
     company-c-headers
     color-theme-solarized
+    php-extras
+    web-mode
     ))
 
 (defun install-packages ()
