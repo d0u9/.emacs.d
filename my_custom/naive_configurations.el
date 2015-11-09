@@ -78,3 +78,5 @@
 
 (provide 'naive_configurations)
 
+;; Prevent emacs to create ~ files
+(setq make-backup-files nil)
